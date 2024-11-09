@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://cdn-1.timesmedia.co.id/images/2023/12/28/hutan.jpg");
+    padding: 50px;
+    overflow: hidden;
+}
+
+.form-container {
+    background-color: rgba(16, 254, 48, 0.8);
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 150%;
+    max-width: 1000px;
+    border: 3px dashed rgba(250, 255, 249, 0.9);;
+    border-radius: 20px;
+    box-shadow: -10px 10px 50px #00000094;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashed-line {
+    border: none;
+    border-top: 3px dashed rgba(0, 128, 128, 0.9);;
+    margin: 10px 0 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 128, 128, 0.9);
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    accent-color: rgba(0, 128, 128, 0.9);
+}
+
+.radio-group label, .checkbox-group label {
+    font-weight: normal;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: rgba(248, 244, 7, 0.9);;
+}
+
+button[type="submit"] {
+    background-color: #c3f24b;
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(50, 212, 117, 0.9);
+}
+
+button[type="reset"]:hover {
+    opacity: 0.10;
+}
+
+button[type="submit"]:hover {
+    background-color: #eeeeee;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
